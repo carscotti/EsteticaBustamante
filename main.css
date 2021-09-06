@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* adaptación a 320 px*/
+@media only screen and (min-width: 320px) {
+  * {
+    padding: 0;
+    font-size: 14px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: black; }
+  /* definición formato del body */
+  /* Formato del Header y Título principal */
+  .header {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 2em 4em;
+    height: 100px;
+    justify-content: center;
+    align-items: center; }
+    .header a {
+      text-decoration: none; }
+  .header__titulo {
+    order: 0;
+    text-transform: capitalize;
+    font-size: .95rem;
+    margin-left: 10px; }
+  /* Formato de ícono del Header y transición */
+  .header__logo {
+    order: -1;
+    transition: width .2s, height .2s;
+    width: 60px;
+    height: 60px;
+    vertical-align: inherit; }
+    .header__logo .header__logo:Hover {
+      width: 65px;
+      height: 65px; }
+  /* Formato del Header y Título principal */
+  /* Formato footer */
+  footer {
+    background-color: #c45086 !important;
+    padding-top: 2em;
+    padding-bottom: 2em; }
+    footer .footer__cuerpo {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: stretch; }
+      footer .footer__cuerpo b {
+        font-weight: bold;
+        font-size: .9rem; }
+      footer .footer__cuerpo .footer__cuerpo__redes {
+        flex-basis: .5rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+        text-align: center;
+        padding-bottom: 1em;
+        padding-top: 1em; }
+        footer .footer__cuerpo .footer__cuerpo__redes a {
+          text-decoration: none; }
+        footer .footer__cuerpo .footer__cuerpo__redes p {
+          font-size: .8rem;
+          margin-bottom: 7px; }
+        footer .footer__cuerpo .footer__cuerpo__redes .footer__cuerpo__redes__whatsapp img {
+          width: 3rem;
+          height: 3rem; }
+        footer .footer__cuerpo .footer__cuerpo__redes .footer__cuerpo__redes__instagram img {
+          width: 3rem;
+          height: 3rem; }
+    footer .footer__cuerpo__ubicacion {
+      flex-basis: .7rem;
+      flex-grow: 1;
+      flex-shrink: 1;
+      text-align: center;
+      padding-top: 1em; }
+      footer .footer__cuerpo__ubicacion iframe {
+        width: 12rem;
+        height: 8rem; }
+      footer .footer__cuerpo__ubicacion b {
+        font-weight: bold;
+        font-size: .9rem; }
+      footer .footer__cuerpo__ubicacion p {
+        font-size: .8rem;
+        margin-bottom: 7px; }
+  /* Fin formato footer */
+  /* Definición de estructura de grilla home*/
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 40px 100px auto 105px 400px;
+    grid-template-areas: "grillaheader"
+ "menuGrilla"
+ "grillabv"
+ "videogrilla"
+ "descripgrilla"
+ "grillafooter";
+    align-items: center;
+    justify-content: center; }
+  /* IDs para las grillas */
+  #grillaheader {
+    grid-area: grillaheader;
+    width: 100%;
+    height: 110%; }
+  #menuGrilla {
+    grid-area: menuGrilla;
+    width: 100%; }
+  .bg-light {
+    background-color: #b150c4 !important; }
+  #grillafooter {
+    grid-area: grillafooter;
+    width: 100%; }
+
+  /* Fin de IDs para las grillas de la home*/
+ 
+  /* Formulario de Contacto - Pagina Contactanos. Form de CV - Trabajá con nosotros */
+  #contactanos.container, #contactanos.container-sm, #cv.container, #cv.container-sm {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: center;
+    text-align: center;
+    align-content:center;}
+  .containerCC {
+    display: flex;
+    justify-content: center;
+  } 
+  .formulario {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    border-style: groove;
+    text-align: center;}
+
+  /* Formato lista de formulario adaptada */
+  dl, ol, ul {
+    list-style-type: none; }
+  ol, ul {
+    padding-left: 0; }
+  /* Fin formato lista de formulario adaptada */
+  #contactanosPAGE {
+    background-image: url("../Images/fondoContactanos.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; }
+
+  /* Definición de formatos generales */
+  .titulo {
+    font-weight: 600;
+    font-size: 1.3rem; }
+  .subtitulo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem; }
+  .textoBasico {
+    font-size: 1rem;
+    padding: 0.5rem; }
+  span {
+    font-weight: bold; }
+  h2 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .btn {
+    padding: .1rem .6rem;
+    margin: .2rem;
+  border-style: solid;  
+  border-color: plum;}
+  .w-100 {
+    width: 250px !important;
+    background-color: white;
+    margin-left: .9rem;
+    margin-top: .9rem; }
+  .card {
+    border: pink;
+    background-color: #eee2e29a;
+    color: #fff;
+    border-radius: 13px;
+    border-style: double;
+    margin-bottom: 12px;}
+  .p-3 {
+    max-width: 300px;
+    margin-inline: auto; }
+  h2.mb-1 {
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.2rem; }
+  div.d-flex.flex-row.align-items-center p {
+    font-size: .9rem;
+    margin-right: 1em;
+    margin-left: 12px;
+    text-align: justify; }
+
+/* Adaptación a 768 px para Grilla*/
+@media only screen and (min-width: 768px) {
+  /* definición de estructura de grilla */
+ 
+  /* Formato de header */
+  .header {
+    width: 100%; }
+  .header__titulo {
+    font-size: 1.3rem; }
+  /* transición de ícono principal */
+  .header__logo {
+    transition: width 1s, height 1s;
+    width: 70px;
+    height: 70px; }
+    .header__logo .header__logo:Hover {
+      width: 80px;
+      height: 80px; }
+  /* Fin de formato de header */
+  /*Formato menú*/
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start; }
+  .navbar-expand-lg .navbar-toggler {
+    display: none; }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: center; }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row; }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem; }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute; }
+  /* Fin formato de menú*/
+  /* Formato de footer */
+  footer .footer__cuerpo {
+    display: flex;
+    flex-direction: row; }
+    footer .footer__cuerpo b {
+      font-size: 1rem; }
+    footer .footer__cuerpo .footer__cuerpo__redes p {
+      font-size: .9rem; }
+  footer .footer__cuerpo__ubicacion b {
+    font-weight: bold;
+    font-size: 1rem; }
+  footer .footer__cuerpo__ubicacion p {
+    font-size: 1rem; }
+  /* Fin de formato de footer */
+  /* Inicio de formato de cuerpo de HOME */
+
+  .snipimage img {
+    max-height: 440px;
+    max-width: 500px; }
+  .w-100 {
+    width: 100% !important;
+    background-color: white;
+    margin-bottom: .9rem; }
+  h2.mb-1 {
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.2rem; }
+  div.d-flex.flex-row.align-items-center p {
+    font-size: .8rem;
+    margin-right: 2em;
+    margin-left: 12px; }
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 41.3333333333%;
+    align-self: center; }
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 55.6666666667%; }
+  .p-3 {
+    max-width: 800px !important; } }
+
+@media only screen and (min-width: 1024px) {
+  /* Adaptación a 1024 px para Grilla*/
+ 
+  #grillafooter {
+    grid-column: 1/2;
+    grid-row: 6/7; }
+  /* Fin adaptación de distribución de secciones a tamaño de pantalla*/
+  /* Formato de header */
+  .header__titulo {
+    font-size: 1.4rem; }
+  /* formato y transición de ícono principal */
+  .header__logo {
+    transition: width 1s, height 1s;
+    width: 80px;
+    height: 80px; }
+    .header__logo .header__logo:Hover {
+      width: 100px;
+      height: 100px; }
+  /* Fin de formato de header */
+  /*Inicio de adaptación de cuerpo principal de la home*/
+
+  /*Fin de adaptación de cuerpo principal de la home*/
+  /*Menú formato adaptación*/
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    justify-content: center; }
+  /*Menú formato adaptación*/
+  .snipimage img {
+    max-height: 500px;
+    max-width: 300px; }
+  .w-100 {
+    width: 100% !important;
+    background-color: white; }
+  h2.mb-1 {
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.7rem; }
+  div.d-flex.flex-row.align-items-center p {
+    font-size: 1.1rem;
+    margin-right: 2em;
+    margin-left: 12px; }
+  .p-3 {
+    max-width: 1200px !important; } }
+    #pedirTurno{
+
+      display: flex;
+      flex-direction: column;
+      width: 30%
+ 
+ }}

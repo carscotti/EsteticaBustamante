@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap" rel="stylesheet">
+    <title>Contactanos- S.B</title>
+    <link rel="shortcut icon" type="image/png" href="Images\LDS.png"/>
+
+</head>
+<!-- Título principal de la web -->
+<header id="grillaheader" class="header">
+    <div>
+    <!-- <a class="header__logo" href="..\index.html"><img class="header__logo" src="Images\LDS.png" alt="Logo" title="Logo"> </a>  -->
+    <h1  class= "header__titulo">Estética  Bustamante</h1></div>
+   
+</header>
+<!-- Menú para navegar por la web -->
+<nav id="btn" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span>Menú</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link btn" href="index.html"><span>Contactanos</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn" href="Misturnos.html">Mis turnos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<body>
+    <main id="contactanosPAGE">
+       <section class="containerCC">
+           <div class="centrarform">
+                <form id="myForm" class="formulario">
+                    <h2 class="text-center mt-5">Por favor, ingresá los siguientes datos para hacer tu reserva</h2>
+                    <div id="error"></div>
+                    <div class="mb-3 form-group">
+                        <label class="textoBasico" for="TipoDeConsulta">¿Qué servicio deseás reservar?</label>
+                        <select name="servicio" id="servicio" class="form-control">
+                            <option class="btn btn-default" value="seleccion">Seleccione una opción</option>	
+                            <option class="btn btn-default" value="Uñas esculpidas" >Uñas esculpidas</option>	
+                            <option class="btn btn-default" value="Depilación definitiva">Depilación definitiva</option>
+                            <option class="btn btn-default" value="Perfilamiento de cejas">Perfilamiento de cejas</option>
+                        </select>
+                    
+                    <div class="mb-3 form-group">
+                        <label for="fechaReg" class="textoBasico" id="fecha">Fecha de turno</label>
+                        <input id="fechaReg" type="date" class="form-control">
+                    </div>
+                    <label for="hora" class="textoBasico">Hora del turno</label>
+                    <input type="time" name="hora" id="hora">
+                    <br>
+
+                    <div class="mb-3 form-group">
+                        <label for="exampleInputEmail1" class="form-label textoBasico" id="email">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">No compartiremos tu mail con nadie más</div>
+                    </div>
+                    <div class="mb-3 form-group">
+                        <label for="exampleInputPassword1" class="form-label textoBasico">Nombre</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div id="error1"></div>
+                    <button type="submit" class="btn btn-primary"  id="submit">Enviar</button>
+                    <input type="reset"  class="btn btn-secondary" value="Limpiar formulario">
+
+                </form>
+            </div>
+        </section>
+    
+    <div id="confirmacion"></div>
+</main>
+
+    <footer id="grillafooter">
+        <div class="footer__cuerpo">
+            <div class="footer__cuerpo__redes">
+                <p><b>Encontranos en las redes sociales</b></p>
+                <div class="footer__cuerpo__redes__whatsapp">
+                    <img class="footer__cuerpo__redes__whatsapp" src="Images\whatsapp.PNG">
+                    <p>(011)15-6114-xxxx</p>
+                </div>
+                <a class="footer__cuerpo__redes__instagram" href="https://www.instagram.com/laboratoriodentalsarcone/"><img class="footer__cuerpo__redes__instagram" src="Images\instagram.PNG"><p>Estética Bustamante</p></a>
+            </div>
+            <div class="footer__cuerpo__ubicacion">
+                <p><b>Dónde estamos</b></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105002.46507826321!2d-58.56875610790173!3d-34.671694771284564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8a0bb4961af%3A0xa5402e42199b10e5!2sPinturer%C3%ADa%20La%20Rotonda!5e0!3m2!1ses!2sar!4v1618985600773!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p>San josé de Calasanz 110 </p>
+            </div>
+        </div>
+    </footer>
+   <!-- Fin de Pie de página con información de contacto, ubicación, redes sociales  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>
+
+
+</html>
