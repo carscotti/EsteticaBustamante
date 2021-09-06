@@ -36,10 +36,12 @@ function tomarDatos(params) {
                             </div>
                             </div>
                             </section>`;
-    const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
-    guardarLocal("reservaConfirmada", JSON.stringify(datosConf));
 
-}
+                            const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
+                            guardarLocal("reservaConfirmada", JSON.stringify(datosConf));
+                        }
+
+
 //validación de formulario
 let miFormulario = document.getElementById("myForm")
 myForm.addEventListener("submit", validarFormulario);
